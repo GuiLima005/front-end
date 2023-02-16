@@ -24,6 +24,13 @@ function status(){
 calcular.addEventListener('click', status)
 
 /*
+ if (nota.value >= 5 ) {
+        aluno.classList.add('aprovado') 
+        aluno.classList.remove('reprovado')
+    } else {
+        formulario.classList.add('reprovado')
+        formulario.classList.remove('aprovado')
+    }
 const calcular = document.getElementById('calcular')
 
 function somar(){
