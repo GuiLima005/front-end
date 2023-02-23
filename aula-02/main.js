@@ -18,10 +18,9 @@ const adicionarCard = (aluno, nota) => {
 
     if (nota > 5) {
         novaDiv.classList.add('aprovado')
-        novaDiv.classList.remove('reprovado')
+        
     } else if (nota <= 5) {
         novaDiv.classList.add('reprovado')
-        novaDiv.classList.remove('aprovado')
     }
 }
 
@@ -42,7 +41,6 @@ const handleClick = () => {
         alert('ERRO')
 
     } else
-
         adicionarCard(nomeAluno, nota)
 }
 
