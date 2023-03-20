@@ -14,6 +14,7 @@ const preencherFormulario = async() => {
     const cep = await pesquisarPostman(cepDigitado)
     document.getElementById('endereco').value = cep.logradouro
     document.getElementById('bairro').value = cep.bairro
+    //cep.cidade para mostrar a cidade no ViaCep 
     document.getElementById('cidade').value = cep.municipio
     document.getElementById('estado').value = cep.estado
 }
