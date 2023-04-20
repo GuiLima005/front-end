@@ -1,6 +1,6 @@
 'use strict'
 import { pesquisarCep } from "./viacep.js"
-import { pesquisarCepPostman } from "./postmon.js"
+import { pesquisarPostmon } from "./postmon.js"
 
 
 // console.log(pesquisarCep)
@@ -11,7 +11,7 @@ import { pesquisarCepPostman } from "./postmon.js"
 
 const preencherFormulario = async() => {
     const cepDigitado = document.getElementById('cep').value
-    const cep = await pesquisarPostman(cepDigitado)
+    const cep = await pesquisarPostmon(cepDigitado)
     document.getElementById('endereco').value = cep.logradouro
     document.getElementById('bairro').value = cep.bairro
     //cep.cidade para mostrar a cidade no ViaCep 

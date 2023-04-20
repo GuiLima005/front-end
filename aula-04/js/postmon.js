@@ -1,6 +1,6 @@
 'use strict'
 
-export const pesquisarPostomon = async (cep) => {
+export const pesquisarPostmon = async (cep) => {
     const url = `https://api.postmon.com.br/v1/cep/${cep}`
    
     const response = await fetch(url)
